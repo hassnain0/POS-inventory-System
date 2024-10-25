@@ -11,20 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `posystem`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `categories`
---
 
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
@@ -38,12 +24,6 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`id`, `Category`, `Date`) VALUES
 (1, 'Category One', '2022-12-07 18:04:16'),
-(2, 'Category Two', '2022-12-07 18:04:20'),
-(3, 'Category Three', '2022-12-07 18:04:24'),
-(4, 'Category Four', '2022-12-07 18:04:27'),
-(5, 'Category Five', '2022-12-07 18:04:31'),
-(6, 'Category Six', '2022-12-07 18:04:36'),
-(7, 'Category Seven', '2022-12-07 18:04:41');
 
 -- --------------------------------------------------------
 
@@ -69,17 +49,7 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`id`, `name`, `idDocument`, `email`, `phone`, `address`, `birthdate`, `purchases`, `lastPurchase`, `registerDate`) VALUES
-(1, 'David Cullison', 123456, 'davidc@mail.com', '(555)567-9999', '27 Joseph Street', '1986-01-05', 15, '2018-12-03 00:01:21', '2022-12-10 13:41:42'),
-(2, 'Mary Yaeger', 121212, 'maryy@mail.com', '(555) 789-9045', '71 Highland Drive', '1983-06-22', 3, '2022-12-08 12:20:28', '2022-12-10 13:41:27'),
-(3, 'Robert Zimmerman', 122458, 'robert@mail.com', '(305) 455-6677', '27 Joseph Street', '1989-04-12', 0, '2022-12-08 12:18:43', '2022-12-10 13:40:27'),
-(4, 'Randall Williams', 103698, 'randalw@mail.com', '(305) 256-6541', '31 Romines Mill Road', '1989-08-15', 5, '2022-12-10 08:42:36', '2022-12-10 13:42:36'),
-(6, 'Christine Moore', 852100, 'christine@mail.com', '(785) 458-7888', '44 Down Lane', '1990-10-16', 36, '2022-12-07 13:17:31', '2022-12-08 18:11:56'),
-(7, 'Nicole Young', 100254, 'nicole@mail.com', '(101) 222-1145', '44 Sycamore Fork Road', '1989-12-12', 4, '2022-12-10 08:38:47', '2022-12-10 13:38:47'),
-(8, 'Grace Moore', 178500, 'gracem@mail.com', '(100) 124-5896', '39 Cambridge Drive', '1990-12-07', 7, '2022-12-10 12:40:02', '2022-12-10 17:40:02'),
-(9, 'Reed Campbell', 178500, 'reedc@mail.com', '(100) 245-7866', '87 Lang Avenue', '1988-04-16', 18, '2022-12-10 08:43:42', '2022-12-10 13:43:42'),
-(10, 'Lynn', 101014, 'lynn@mail.com', '(100) 145-8966', '90 Roosevelt Road', '1992-02-22', 0, '0000-00-00 00:00:00', '2022-12-10 17:12:55'),
-(11, 'Will Williams', 100147, 'williams@mail.com', '(774) 145-8888', '114 Test Address', '1985-04-19', 13, '2022-12-10 12:35:52', '2022-12-10 17:35:52');
-
+(1, 'Tester', 123456, 'test@gmail.com', '(555)567-9999', 'Hyderabad Sindh', '1986-01-05', 15, '2018-12-03 00:01:21', '2022-12-10 13:41:42'),
 -- --------------------------------------------------------
 
 --
@@ -105,17 +75,6 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `idCategory`, `code`, `description`, `image`, `stock`, `buyingPrice`, `sellingPrice`, `sales`, `date`) VALUES
 (18, 2, '201', 'Product Sample One', 'views/img/products/default/anonymous.png', 10, 56, 78, 20, '2022-12-08 17:23:41'),
-(25, 3, '301', 'Product Sample Two', 'views/img/products/default/anonymous.png', 18, 144, 185, 23, '2022-12-08 17:20:28'),
-(36, 4, '401', 'Product Sample Three', 'views/img/products/default/anonymous.png', 55, 98, 125, 22, '2022-12-10 13:42:36'),
-(44, 5, '501', 'Product Sample Four', 'views/img/products/default/anonymous.png', 8, 350, 490, 21, '2022-12-08 17:23:27'),
-(61, 7, '518', 'Test Product', 'views/img/products/518/204.jpg', 19, 20, 28, 41, '2022-12-07 18:19:13'),
-(62, 4, '519', 'Product Sample Five', 'views/img/products/default/anonymous.png', 95, 120, 156, 0, '2022-12-10 17:12:55'),
-(63, 7, '520', 'Product Sample Six', 'views/img/products/default/anonymous.png', 53, 70, 98, 0, '2022-12-10 17:12:55'),
-(64, 1, '521', 'Product Sample Seven', 'views/img/products/default/anonymous.png', 32, 50, 70, 0, '2022-12-08 17:31:25'),
-(65, 3, '522', 'Product Sample Eight', 'views/img/products/default/anonymous.png', 5, 100, 140, 5, '2022-12-10 16:53:02'),
-(66, 4, '523', 'Product Sample Nine', 'views/img/products/default/anonymous.png', 37, 25, 35, 23, '2022-12-10 17:35:52'),
-(67, 5, '524', 'Product Sample Ten', 'views/img/products/default/anonymous.png', 65, 65, 91, 6, '2022-12-10 13:43:42'),
-(68, 4, '525', 'Product Sample Eleven', 'views/img/products/default/anonymous.png', 16, 120, 168, 10, '2022-12-10 17:40:02');
 
 -- --------------------------------------------------------
 
@@ -177,8 +136,6 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `user`, `password`, `profile`, `photo`, `status`, `lastLogin`, `date`) VALUES
 (1, 'Administrator', 'admin', '$2a$07$asxx54ahjppf45sd87a5auJvme8CFSgJ.CVouof6guZgq6uhIs55K', 'Administrator', 'views/img/users/admin/admin-icn.png', 1, '2022-12-12 22:42:22', '2022-12-13 03:42:22'),
-(2, 'Jonathan Barbour', 'seller', '$2a$07$asxx54ahjppf45sd87a5au8uJqn2VoaOMw86zRUoDH6inuYomGLDq', 'Seller', 'views/img/users/jonathan/239.jpg', 1, '2022-12-10 12:39:15', '2022-12-10 17:39:15'),
-(3, 'Carmen McLeod', 'carmen', '$2a$07$asxx54ahjppf45sd87a5au8uJqn2VoaOMw86zRUoDH6inuYomGLDq', 'Special', 'views/img/users/carmen/215.jpg', 1, '2022-12-10 12:17:55', '2022-12-10 17:17:55');
 
 --
 -- Indexes for dumped tables
