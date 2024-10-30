@@ -13,7 +13,7 @@ if($_SESSION["profile"] == "Special"){
 }
 
 ?>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <div class="content-wrapper">
 
   <section class="content-header">
@@ -57,7 +57,6 @@ if($_SESSION["profile"] == "Special"){
              <th>Birthday</th>
              <th>Total Purchases</th>
              <th>Last Purchase</th>
-             <th>Last login</th>
              <th>Actions</th>
 
            </tr> 
@@ -96,7 +95,6 @@ if($_SESSION["profile"] == "Special"){
 
                       <td>'.$value["lastPurchase"].'</td>
 
-                      <td>'.$value["registerDate"].'</td>
 
                       <td>
 
@@ -117,7 +115,7 @@ if($_SESSION["profile"] == "Special"){
           ?>
             
           </tbody>
-		<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+		
         </table>
 
       </div>
@@ -265,7 +263,7 @@ MODAL EDIT CUSTOMER
           <h4 class="modal-title">Edit Customer</h4>
 
         </div>
-		<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+		
         <!--=====================================
         MODAL BODY
         ======================================-->
@@ -386,7 +384,7 @@ MODAL EDIT CUSTOMER
     
 
     </div>
-	<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+	
   </div>
 
 </div>

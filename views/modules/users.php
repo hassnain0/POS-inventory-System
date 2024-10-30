@@ -1,6 +1,6 @@
 
 <div class="content-wrapper">
-	<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+	
   <section class="content-header">
 
     <h1>
@@ -47,7 +47,7 @@
            </tr> 
 
           </thead>
-			<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+			
           <tbody>
 
             <?php
@@ -392,7 +392,7 @@
     </div>
 
   </div>
-	<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+	
 </div>
 
 <?php

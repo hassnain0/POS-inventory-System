@@ -39,7 +39,7 @@ foreach ($sales as $key => $valueSales) {
 $dontrepeatnames = array_unique($arraySellers);
 
 ?>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 
 <!--=====================================
 Sellers

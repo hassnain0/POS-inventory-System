@@ -39,7 +39,7 @@ foreach ($sales as $key => $valueSales) {
 $dontrepeatnames = array_unique($arrayCustomers);
 
 ?>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 
 <!--=====================================
 Customers
@@ -64,7 +64,7 @@ Customers
   	</div>
 
 </div>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <script>
 	
 //BAR CHART

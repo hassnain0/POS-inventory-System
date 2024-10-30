@@ -49,7 +49,7 @@ $noRepeatDates = array_unique($arrayDates);
 SALES GRAPH
 ======================================-->
 
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <div class="box box-solid bg-red-gradient">
 	
 	<div class="box-header">

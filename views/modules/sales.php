@@ -29,7 +29,7 @@ if ($xml) {
   <section class="content-header">
 
     <h1>
-      <!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+      
       Sales Management
 
     </h1>
@@ -56,7 +56,7 @@ if ($xml) {
       </div>
 
       <div class="box-body">
-        <!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+        
         <table class="table table-bordered table-hover table-striped dt-responsive tables" width="100%">
 
           <thead>
@@ -166,7 +166,7 @@ if ($xml) {
       </div>
 
     </div>
-    <!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+    
   </section>
 
 </div>

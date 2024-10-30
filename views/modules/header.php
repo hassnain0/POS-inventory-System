@@ -21,7 +21,7 @@
 		</span>
 
 	</a>
-	<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+	
 	<!--=====================================
 	=            navigation         =
 	======================================-->
@@ -73,7 +73,7 @@
 
 								<a class="btn btn-default btn-flat" href="logout">Logout</a>
 
-							</div><!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+							</div>
 
 						</li>
 

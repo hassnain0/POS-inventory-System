@@ -1,4 +1,4 @@
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <div class="content-wrapper">
 
   <section class="content-header">
@@ -37,7 +37,7 @@
         </div>
 
       </div>
-		<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+		
       <div class="box-body">
 
         Start creating your amazing application!

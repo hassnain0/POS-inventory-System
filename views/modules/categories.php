@@ -13,7 +13,7 @@ if($_SESSION["profile"] == "Seller"){
 }
 
 ?>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -87,7 +87,7 @@ if($_SESSION["profile"] == "Seller"){
 
           </table>
 
-		<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+		
 
         </div>
       
@@ -102,7 +102,7 @@ if($_SESSION["profile"] == "Seller"){
 <!--=====================================
 =            module add Categories            =
 ======================================-->
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <!-- Modal -->
 <div id="addCategories" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -143,7 +143,7 @@ if($_SESSION["profile"] == "Seller"){
   $createCategory -> ctrCreateCategory();
 ?>
 
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <!--=====================================
 =            module edit Categories            =
 ======================================-->
@@ -170,7 +170,7 @@ if($_SESSION["profile"] == "Seller"){
                 <input type="hidden" name="idCategory" id="idCategory" required>
               </div>
             </div>
-			<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+			
           </div>
         </div>
         <div class="modal-footer">
@@ -188,7 +188,7 @@ if($_SESSION["profile"] == "Seller"){
 
   </div>
 </div>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <?php
   
   $deleteCategory = new ControllerCategories();

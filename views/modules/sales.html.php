@@ -5,7 +5,6 @@
     <h1>
 
       Sales Management
-
     </h1>
 
 
@@ -19,73 +18,73 @@
       <div class="box-header with-border">
 
         <a href="create-sales">
-          <button class="btn btn-success" >
-        
-          <i class="fa fa-plus"></i> Add Sale
-  
+          <button class="btn btn-success">
+
+            <i class="fa fa-plus"></i> Add Sale
+
           </button>
         </a>
-		<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+        
       </div>
 
       <div class="box-body">
 
         <table class="table table-bordered table-hover table-striped dt-responsive tables" width="100%">
-       
-          <thead>
-           
-           <tr>
-             
-             <th style="width:10px">#</th>
-             <th>Bill</th>
-             <th>Customer</th>
-             <th>Seller</th>
-             <th>Payment Method</th>
-             <th>Net Cost</th>
-             <th>Total Cost</th>
-             <th>Date</th>
-             <th>Actions</th>
 
-           </tr> 
+          <thead>
+
+            <tr>
+
+              <th style="width:10px">#</th>
+              <th>Bill</th>
+              <th>Customer</th>
+              <th>Seller</th>
+              <th>Payment Method</th>
+              <th>Net Cost</th>
+              <th>Total Cost</th>
+              <th>Date</th>
+              <th>Actions</th>
+
+            </tr>
 
           </thead>
           <tbody>
 
             <?php
 
-          $item = null;
-          $valor = null;
+            $item = null;
+            $valor = null;
 
-          $respuesta = ControladorVentas::ctrMostrarVentas($item, $valor);
+            $respuesta = ControladorVentas::ctrMostrarVentas($item, $valor);
 
-          foreach ($respuesta as $key => $value) {
-           
+            foreach ($respuesta as $key => $value) {
 
-           echo '<td>'.($key+1).'</td>
 
-                  <td>'.$value["codigo"].'</td>';
+              echo '<td>' . ($key + 1) . '</td>
 
-                  $itemCliente = "id";
-                  $valorCliente = $value["id_cliente"];
+                  <td>' . $value["codigo"] . '</td>';
 
-                  $respuestaCliente = ControladorClientes::ctrMostrarClientes($itemCliente, $valorCliente);
+              $itemCliente = "id";
+              $valorCliente = $value["id_cliente"];
 
-                  echo '<td>'.$respuestaCliente["nombre"].'</td>';
+              $respuestaCliente = ControladorClientes::ctrMostrarClientes($itemCliente, $valorCliente);
 
-                  $itemUsuario = "id";
-                  $valorUsuario = $value["id_vendedor"];
+              echo '<td>' . $respuestaCliente["nombre"] . '</td>';
 
-                  $respuestaUsuario = ControladorUsuarios::ctrMostrarUsuarios($itemUsuario, $valorUsuario);
+              $itemUsuario = "id";
+              $valorUsuario = $value["id_vendedor"];
 
-                  echo '<td>'.$respuestaUsuario["nombre"].'</td>
+              $respuestaUsuario = ControladorUsuarios::ctrMostrarUsuarios($itemUsuario, $valorUsuario);
 
-                  <td>'.$value["metodo_pago"].'</td>
+              echo '<td>' . $respuestaUsuario["nombre"] . '</td>
 
-                  <td>$ '.number_format($value["neto"],2).'</td>
+                  <td>' . $value["metodo_pago"] . '</td>
 
-                  <td>$ '.number_format($value["total"],2).'</td>
+                  <td>$ ' . number_format($value["neto"], 2) . '</td>
 
-                  <td>'.$value["fecha"].'</td>
+                  <td>$ ' . number_format($value["total"], 2) . '</td>
+
+                  <td>' . $value["fecha"] . '</td>
 
                   <td>
 
@@ -93,9 +92,9 @@
                         
                       <button class="btn btn-warning"><i class="fa fa-print"></i></button>
 
-                      <button class="btn btn-primary btnEditarVenta" idVenta="'.$value["id"].'"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-primary btnEditarVenta" idVenta="' . $value["id"] . '"><i class="fa fa-pencil"></i></button>
 
-                      <button class="btn btn-danger btnEliminarVenta" idVenta="'.$value["id"].'"><i class="fa fa-trash"></i></button>
+                      <button class="btn btn-danger btnEliminarVenta" idVenta="' . $value["id"] . '"><i class="fa fa-trash"></i></button>
 
                     </div>  
 
@@ -104,7 +103,7 @@
                 </tr>';
             }
 
-        ?>
+            ?>
 
 
           </tbody>
@@ -112,9 +111,9 @@
         </table>
 
       </div>
-    
+
     </div>
-	<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+    
   </section>
 
 </div>

@@ -13,7 +13,7 @@ if($_SESSION["profile"] == "Special"){
 }
 
 ?>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <div class="content-wrapper">
 
   <section class="content-header">
@@ -119,7 +119,7 @@ if($_SESSION["profile"] == "Special"){
                     =            CUSTOMER INPUT           =
                     ======================================-->
                   
-                    <!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+                    
                     <div class="form-group">
 
                       <div class="input-group">
@@ -150,7 +150,7 @@ if($_SESSION["profile"] == "Special"){
                       </div>
 
                     </div>
-					<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+					
                     <!--=====================================
                     =            PRODUCT INPUT           =
                     ======================================-->
@@ -225,7 +225,7 @@ if($_SESSION["profile"] == "Special"){
                             </tr>
 
                           </tbody>
-						<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+						
                         </table>
                         
                       </div>
@@ -292,7 +292,7 @@ if($_SESSION["profile"] == "Special"){
       =            PRODUCTS TABLE                   =
       =============================================-->
 
-		<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+		
       <div class="col-lg-7 hidden-md hidden-sm hidden-xs">
         
           <div class="box box-default">
@@ -333,7 +333,7 @@ if($_SESSION["profile"] == "Special"){
 
 </div>
 
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <!--=====================================
 =            module add Customer            =
 ======================================-->
@@ -419,5 +419,5 @@ if($_SESSION["profile"] == "Special"){
 
   </div>
 </div>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <!--====  End of module add Customer  ====-->

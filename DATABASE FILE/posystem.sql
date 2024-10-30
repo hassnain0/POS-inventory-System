@@ -1,99 +1,130 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Dec 13, 2022 at 04:43 AM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
+SET
+  SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
+SET
+  time_zone = "+00:00";
 
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
   `Category` text COLLATE utf8_spanish_ci NOT NULL,
   `Date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_spanish_ci;
 
 --
 -- Dumping data for table `categories`
 --
-
-INSERT INTO `categories` (`id`, `Category`, `Date`) VALUES
-(1, 'Category One', '2022-12-07 18:04:16'),
-
--- --------------------------------------------------------
-
---
--- Table structure for table `customers`
---
-
-CREATE TABLE `customers` (
-  `id` int(11) NOT NULL,
-  `name` text COLLATE utf8_spanish_ci NOT NULL,
-  `idDocument` int(11) NOT NULL,
-  `email` text COLLATE utf8_spanish_ci NOT NULL,
-  `phone` text COLLATE utf8_spanish_ci NOT NULL,
-  `address` text COLLATE utf8_spanish_ci NOT NULL,
-  `birthdate` date NOT NULL,
-  `purchases` int(11) NOT NULL,
-  `lastPurchase` datetime NOT NULL,
-  `registerDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+INSERT INTO
+  `categories` (`id`, `Category`, `Date`)
+VALUES
+  (1, 'Category One', '2022-12-07 18:04:16'),
+  -- --------------------------------------------------------
+  --
+  -- Table structure for table `customers`
+  --
+  CREATE TABLE `customers` (
+    `id` int(11) NOT NULL,
+    `name` text COLLATE utf8_spanish_ci NOT NULL,
+    `idDocument` int(11) NOT NULL,
+    `email` text COLLATE utf8_spanish_ci NOT NULL,
+    `phone` text COLLATE utf8_spanish_ci NOT NULL,
+    `address` text COLLATE utf8_spanish_ci NOT NULL,
+    `birthdate` date NOT NULL,
+    `purchases` int(11) NOT NULL,
+    `lastPurchase` datetime NOT NULL,
+    `registerDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  ) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_spanish_ci;
 
 --
 -- Dumping data for table `customers`
 --
-
-INSERT INTO `customers` (`id`, `name`, `idDocument`, `email`, `phone`, `address`, `birthdate`, `purchases`, `lastPurchase`, `registerDate`) VALUES
-(1, 'Tester', 123456, 'test@gmail.com', '(555)567-9999', 'Hyderabad Sindh', '1986-01-05', 15, '2018-12-03 00:01:21', '2022-12-10 13:41:42'),
--- --------------------------------------------------------
-
---
--- Table structure for table `products`
---
-
-CREATE TABLE `products` (
-  `id` int(11) NOT NULL,
-  `idCategory` int(11) NOT NULL,
-  `code` text COLLATE utf8_spanish_ci NOT NULL,
-  `description` text COLLATE utf8_spanish_ci NOT NULL,
-  `image` text COLLATE utf8_spanish_ci NOT NULL,
-  `stock` int(11) NOT NULL,
-  `buyingPrice` float NOT NULL,
-  `sellingPrice` float NOT NULL,
-  `sales` int(11) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+INSERT INTO
+  `customers` (
+    `id`,
+    `name`,
+    `idDocument`,
+    `email`,
+    `phone`,
+    `address`,
+    `birthdate`,
+    `purchases`,
+    `lastPurchase`,
+    `registerDate`
+  )
+VALUES
+  (
+    1,
+    'Tester',
+    123456,
+    'test@gmail.com',
+    '(555)567-9999',
+    'Hyderabad Sindh',
+    '1986-01-05',
+    15,
+    '2018-12-03 00:01:21',
+    '2022-12-10 13:41:42'
+  ),
+  -- --------------------------------------------------------
+  --
+  -- Table structure for table `products`
+  --
+  CREATE TABLE `products` (
+    `id` int(11) NOT NULL,
+    `idCategory` int(11) NOT NULL,
+    `code` text COLLATE utf8_spanish_ci NOT NULL,
+    `description` text COLLATE utf8_spanish_ci NOT NULL,
+    `image` text COLLATE utf8_spanish_ci NOT NULL,
+    `stock` int(11) NOT NULL,
+    `buyingPrice` float NOT NULL,
+    `sellingPrice` float NOT NULL,
+    `sales` int(11) NOT NULL,
+    `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  ) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_spanish_ci;
 
 --
 -- Dumping data for table `products`
 --
-
-INSERT INTO `products` (`id`, `idCategory`, `code`, `description`, `image`, `stock`, `buyingPrice`, `sellingPrice`, `sales`, `date`) VALUES
-(18, 2, '201', 'Product Sample One', 'views/img/products/default/anonymous.png', 10, 56, 78, 20, '2022-12-08 17:23:41'),
-
--- --------------------------------------------------------
-
---
--- Table structure for table `sales`
---
-
-CREATE TABLE `sales` (
-  `id` int(11) NOT NULL,
-  `code` int(11) NOT NULL,
-  `idCustomer` int(11) NOT NULL,
-  `idSeller` int(11) NOT NULL,
-  `products` text COLLATE utf8_spanish_ci NOT NULL,
-  `tax` int(11) NOT NULL,
-  `netPrice` float NOT NULL,
-  `totalPrice` float NOT NULL,
-  `paymentMethod` text COLLATE utf8_spanish_ci NOT NULL,
-  `saledate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci ROW_FORMAT=COMPACT;
+INSERT INTO
+  `products` (
+    `id`,
+    `idCategory`,
+    `code`,
+    `description`,
+    `image`,
+    `stock`,
+    `buyingPrice`,
+    `sellingPrice`,
+    `sales`,
+    `date`
+  )
+VALUES
+  (
+    18,
+    2,
+    '201',
+    'Product Sample One',
+    'views/img/products/default/anonymous.png',
+    10,
+    56,
+    78,
+    20,
+    '2022-12-08 17:23:41'
+  ),
+  -- --------------------------------------------------------
+  --
+  -- Table structure for table `sales`
+  --
+  CREATE TABLE `sales` (
+    `id` int(11) NOT NULL,
+    `code` int(11) NOT NULL,
+    `idCustomer` int(11) NOT NULL,
+    `idSeller` int(11) NOT NULL,
+    `products` text COLLATE utf8_spanish_ci NOT NULL,
+    `tax` int(11) NOT NULL,
+    `netPrice` float NOT NULL,
+    `totalPrice` float NOT NULL,
+    `paymentMethod` text COLLATE utf8_spanish_ci NOT NULL,
+    `saledate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  ) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_spanish_ci ROW_FORMAT = COMPACT;
 
 --
 -- Dumping data for table `sales`
@@ -112,94 +143,135 @@ INSERT INTO `sales` (`id`, `code`, `idCustomer`, `idSeller`, `products`, `tax`, 
 (21, 10012, 11, 1, '[{\"id\":\"68\",\"description\":\"Product Sample Eleven\",\"quantity\":\"3\",\"stock\":\"23\",\"price\":\"168\",\"totalPrice\":\"504\"},{\"id\":\"66\",\"description\":\"Product Sample Nine\",\"quantity\":\"10\",\"stock\":\"37\",\"price\":\"35\",\"totalPrice\":\"350\"}]', 68, 854, 922, 'CC-100000147850', '2022-12-10 17:35:52'),
 (22, 10013, 8, 2, '[{\"id\":\"68\",\"description\":\"Product Sample Eleven\",\"quantity\":\"7\",\"stock\":\"16\",\"price\":\"168\",\"totalPrice\":\"1176\"}]', 0, 1176, 1176, 'cash', '2022-12-10 17:40:02');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `name` text COLLATE utf8_spanish_ci NOT NULL,
-  `user` text COLLATE utf8_spanish_ci NOT NULL,
-  `password` text COLLATE utf8_spanish_ci NOT NULL,
-  `profile` text COLLATE utf8_spanish_ci NOT NULL,
-  `photo` text COLLATE utf8_spanish_ci NOT NULL,
-  `status` int(1) NOT NULL,
-  `lastLogin` datetime NOT NULL,
-  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci ROW_FORMAT=COMPACT;
+  -- --------------------------------------------------------
+  --
+  -- Table structure for table `users`
+  --
+  CREATE TABLE `users` (
+    `id` int(11) NOT NULL,
+    `name` text COLLATE utf8_spanish_ci NOT NULL,
+    `user` text COLLATE utf8_spanish_ci NOT NULL,
+    `password` text COLLATE utf8_spanish_ci NOT NULL,
+    `profile` text COLLATE utf8_spanish_ci NOT NULL,
+    `photo` text COLLATE utf8_spanish_ci NOT NULL,
+    `status` int(1) NOT NULL,
+    `lastLogin` datetime NOT NULL,
+    `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  ) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_spanish_ci ROW_FORMAT = COMPACT;
 
 --
 -- Dumping data for table `users`
 --
-
-INSERT INTO `users` (`id`, `name`, `user`, `password`, `profile`, `photo`, `status`, `lastLogin`, `date`) VALUES
-(1, 'Administrator', 'admin', '$2a$07$asxx54ahjppf45sd87a5auJvme8CFSgJ.CVouof6guZgq6uhIs55K', 'Administrator', 'views/img/users/admin/admin-icn.png', 1, '2022-12-12 22:42:22', '2022-12-13 03:42:22'),
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `categories`
---
-ALTER TABLE `categories`
-  ADD PRIMARY KEY (`id`);
+INSERT INTO
+  `users` (
+    `id`,
+    `name`,
+    `user`,
+    `password`,
+    `profile`,
+    `photo`,
+    `status`,
+    `lastLogin`,
+    `date`
+  )
+VALUES
+  (
+    1,
+    'Administrator',
+    'admin',
+    '$2a$07$asxx54ahjppf45sd87a5auJvme8CFSgJ.CVouof6guZgq6uhIs55K',
+    'Administrator',
+    'views/img/users/admin/admin-icn.png',
+    1,
+    '2022-12-12 22:42:22',
+    '2022-12-13 03:42:22'
+  ),
+  --
+  -- Indexes for dumped tables
+  --
+  --
+  -- Indexes for table `categories`
+  --
+ALTER TABLE
+  `categories`
+ADD
+  PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `customers`
 --
-ALTER TABLE `customers`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE
+  `customers`
+ADD
+  PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `products`
 --
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE
+  `products`
+ADD
+  PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `sales`
 --
-ALTER TABLE `sales`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE
+  `sales`
+ADD
+  PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
 --
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE
+  `users`
+ADD
+  PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
+ALTER TABLE
+  `categories`
+MODIFY
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  AUTO_INCREMENT = 8;
 
---
--- AUTO_INCREMENT for table `categories`
---
-ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `customers`
 --
-ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+ALTER TABLE
+  `customers`
+MODIFY
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  AUTO_INCREMENT = 12;
+
 --
 -- AUTO_INCREMENT for table `products`
 --
-ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+ALTER TABLE
+  `products`
+MODIFY
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  AUTO_INCREMENT = 69;
+
 --
 -- AUTO_INCREMENT for table `sales`
 --
-ALTER TABLE `sales`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+ALTER TABLE
+  `sales`
+MODIFY
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  AUTO_INCREMENT = 23;
+
 --
 -- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+ALTER TABLE
+  `users`
+MODIFY
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  AUTO_INCREMENT = 4;
+;
+
+;
+
+;

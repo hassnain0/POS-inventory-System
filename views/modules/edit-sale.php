@@ -13,7 +13,7 @@
       <li><a href="home"><i class="fa fa-dashboard"></i> Home</a></li>
 
       <li class="active">Edit Sale</li>
-		<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+		
     </ol>
 
   </section>
@@ -73,7 +73,7 @@
                         <input type="hidden" name="idSeller" value="<?php echo $seller["id"]; ?>">
 
                       </div>
-					<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+					
                     </div>
 
 
@@ -100,7 +100,7 @@
                     =            CUSTOMER INPUT           =
                     ======================================-->
                   
-                    <!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+                    
                     <div class="form-group">
 
                       <div class="input-group">
@@ -130,7 +130,7 @@
                         <span class="input-group-addon"><button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modalAddCustomer" data-dismiss="modal">Add Customer</button></span>
 
                       </div>
-					<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+					
                     </div>
 
                     <!--=====================================
@@ -202,7 +202,7 @@
                     <button type="button" class="btn btn-default hidden-lg btnAddProduct">Add Product</button>
 
                     <hr>
-					<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+					
                     <div class="row">
 
                       <!--=====================================
@@ -239,7 +239,7 @@
 
                                 </div>
                               </td>
-								<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+								
                               <td style="width: 50%">
 
                                 <div class="input-group">
@@ -302,7 +302,7 @@
                 </div>
 
             </div>
-			<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+			
             <div class="box-footer">
               <button type="submit" class="btn btn-success pull-right">Save Changes</button>
             </div>
@@ -345,7 +345,7 @@
                      <th>Description</th>
                      <th>Stock</th>
                      <th>Actions</th>
-					<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+					
                    </tr> 
 
                 </thead>
@@ -439,7 +439,7 @@
           <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Close</button>
           <button type="submit" class="btn btn-success">Save Customer</button>
         </div>
-      </form><!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+      </form>
 
       <?php
 
@@ -450,6 +450,6 @@
     </div>
 
   </div>
-</div><!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+</div>
 
 <!--====  End of module add Customer  ====-->

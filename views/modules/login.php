@@ -1,5 +1,5 @@
 <div id="back"></div>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <div class="login-box">
 
   <div class="login-logo">
@@ -52,4 +52,4 @@
   </div>
 
 </div>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+

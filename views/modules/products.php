@@ -42,19 +42,19 @@ if($_SESSION["profile"] == "Seller"){
         <table class="table table-bordered table-hover table-striped dt-responsive productsTable" width="100%">
        
           <thead>
-			<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+			
            <tr>
              
             
+             <th>Index</th>
              <th>Image</th>
              <th>Code</th>
-             <th>Description</th>
+             <th>Product Description</th>
              <th>Category</th>
              <th>Stock</th>
              <th>Buying Price</th>
              <th>Selling Price</th>
-             <th>Date added</th>
-             <th>Actions</th>
+             <th>Date Added</th>
 
            </tr> 
 
@@ -78,7 +78,7 @@ if($_SESSION["profile"] == "Seller"){
 
 <!-- Modal -->
 <div id="addProduct" class="modal fade" role="dialog">
-	<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+	
   <div class="modal-dialog">
 
     <div class="modal-content">
@@ -189,7 +189,7 @@ if($_SESSION["profile"] == "Seller"){
                 </div>
 
               </div>
-			  <!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+			  
 
               <!-- INPUT SELLING PRICE -->
               <div class="col-xs-12 col-sm-6">  
@@ -268,7 +268,7 @@ if($_SESSION["profile"] == "Seller"){
         </div>
 
       </form>
-	  <!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+	  
 
       <?php
 
@@ -311,7 +311,7 @@ EDIT PRODUCT
         <!--=====================================
          BODY
         ======================================-->
-		<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+		
         <div class="modal-body">
 
           <div class="box-body">
@@ -385,7 +385,7 @@ EDIT PRODUCT
 
                   </div>
 
-                </div><!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+                </div>
 
                 <!-- INPUT FOR SELLING PRICE -->
                 <div class="col-xs-12 col-sm-6">
@@ -478,7 +478,7 @@ EDIT PRODUCT
 
   </div>
 
-</div><!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+</div>
 
 <?php
 

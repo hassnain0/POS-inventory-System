@@ -20,7 +20,7 @@ $totalProducts = count($products);
 
 
 <div class="col-lg-3 col-xs-6">
-	<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+	
   <div class="small-box bg-green">
     
     <div class="inner">
@@ -46,7 +46,7 @@ $totalProducts = count($products);
   </div>
 
 </div>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <div class="col-lg-3 col-xs-6">
 
   <div class="small-box bg-primary">
@@ -74,7 +74,7 @@ $totalProducts = count($products);
   </div>
 
 </div>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <div class="col-lg-3 col-xs-6">
 
   <div class="small-box bg-purple">
@@ -102,7 +102,7 @@ $totalProducts = count($products);
   </div>
 
 </div>
-<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+
 <div class="col-lg-3 col-xs-6">
 
   <div class="small-box bg-red">
@@ -128,5 +128,5 @@ $totalProducts = count($products);
     </a>
 
   </div>
-	<!-- Web Engineering Project By 21CS050,21CS072,21CS078 ! -->
+	
 </div>
